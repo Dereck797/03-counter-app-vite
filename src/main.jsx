@@ -13,6 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         {/* Si se envía solamente title como a continuación se entenderá que se le 
         está enviando un true o un valor boolean*/}
         {/* <FirstApp title /> */}
-        <FirstApp title='Hola Soy Goku' subtitle={ 213 } />
+        <FirstApp/>
     </React.StrictMode>
 );
