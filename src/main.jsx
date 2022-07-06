@@ -8,7 +8,7 @@ import './styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <HelloWorldApp/>
-        <FirstApp/>
+        {/* title y subtitle son propiedades del componente  */}
+        <FirstApp title="Hola, Soy Goku" subtitle={123} />
     </React.StrictMode>
 );
