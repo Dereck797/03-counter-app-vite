@@ -6,9 +6,13 @@ import { HelloWorldApp } from './HelloWorldApp';
 // Se importan los estilos globales
 import './styles.css'
 
+//
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        {/* title y subtitle son propiedades del componente  */}
-        <FirstApp title="Hola, Soy Goku" subtitle={123} />
+        {/* <FirstApp title={ 123 }/> */}
+        {/* Si se envía solamente title como a continuación se entenderá que se le 
+        está enviando un true o un valor boolean*/}
+        {/* <FirstApp title /> */}
+        <FirstApp title='Hola Soy Goku' subtitle={ 213 } />
     </React.StrictMode>
 );
