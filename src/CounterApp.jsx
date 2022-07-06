@@ -20,6 +20,8 @@ export const CounterApp = ({value}) => {
         <h2>{ counter }</h2>
 
         <button onClick={event} > +1 </button>
+        <button onClick={event} > -1 </button>
+        <button onClick={event} > Reset </button>
         </>
     )
 }
