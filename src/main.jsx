@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { CounterApp } from './CounterApp';
 import { FirstApp } from './FirstApp';
 import { HelloWorldApp } from './HelloWorldApp';
 
@@ -9,10 +10,6 @@ import './styles.css'
 //
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        {/* <FirstApp title={ 123 }/> */}
-        {/* Si se envía solamente title como a continuación se entenderá que se le 
-        está enviando un true o un valor boolean*/}
-        {/* <FirstApp title /> */}
-        <FirstApp/>
+        <CounterApp value={ 234 }/>
     </React.StrictMode>
 );
