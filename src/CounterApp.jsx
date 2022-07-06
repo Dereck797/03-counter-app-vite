@@ -3,25 +3,20 @@ import PropTypes from 'prop-types';
 
 export const CounterApp = ({value}) => { 
 
-    // Entre parentesis se define el valor inicial del hook
     const [counter, setCounter] = useState( value );
 
-
-    const event = () => {
-        // setCounter(counter + 1);
-        // lo anterior también se puede hacer de la siguiente manera
-        // 'co' es el valor del estado anterior de counter
-        setCounter((co) => co + 1);
-    }
-
+    const suma = () => setCounter((co) => co + 1);
+    const resta = () => setCounter((co) => co - 1);
+    const reset = () => setCounter(value);
+    
     return (
         <>
         <h1>CounterApp</h1>
         <h2>{ counter }</h2>
 
-        <button onClick={event} > +1 </button>
-        <button onClick={event} > -1 </button>
-        <button onClick={event} > Reset </button>
+        <button onClick={suma} > +1 </button>
+        <button onClick={resta} > -1 </button>
+        <button onClick={reset} > Reset </button>
         </>
     )
 }
