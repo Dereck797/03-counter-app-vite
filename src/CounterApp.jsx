@@ -12,7 +12,7 @@ export const CounterApp = ({value}) => {
     return (
         <>
         <h1>CounterApp</h1>
-        <h2>{ counter }</h2>
+        <h2 data-testid="counter">{ counter }</h2>
 
         <button onClick={suma} > +1 </button>
         <button onClick={resta} > -1 </button>
